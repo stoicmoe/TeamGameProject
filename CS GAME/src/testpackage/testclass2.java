@@ -5,5 +5,7 @@ public class testclass2 {
  System.out.println("Hello World");
  int x =2;
  int y = 4;
- System.out.println(y/x);}
+ System.out.println(y/x);
+ System.out.println("BOOM!!");
+ }
 }
