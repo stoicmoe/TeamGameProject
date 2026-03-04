@@ -8,7 +8,7 @@ import game.engine.cards.*;
 public class Board {
 	private Cell[][] boardCells;
 	private static ArrayList<Monster> stationedMonsters;
-	private static ArrayList<Card> originalcards;
+	private static ArrayList<Card> originalCards;
 	private static ArrayList<Card> cards;
 	
 	public Cell[][] getBoardCells() {
@@ -21,7 +21,7 @@ public class Board {
 		Board.stationedMonsters = stationedMonsters;
 	}
 	public static ArrayList<Card> getOriginalcards() {
-		return originalcards;
+		return originalCards;
 	}
 	public static ArrayList<Card> getCards() {
 		return cards;
@@ -32,5 +32,8 @@ public class Board {
 	
 	public Board(ArrayList<Card> readCards){
 		boardCells = new Cell[Constants.BOARD_ROWS][Constants.BOARD_COLS];
+		stationedMonsters = new ArrayList<>();
+		cards = new ArrayList<>();
+		originalCards = readCards;
 	}
 }

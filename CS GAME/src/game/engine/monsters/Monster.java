@@ -1,11 +1,13 @@
 package game.engine.monsters;
 
+import game.engine.*;
+
 public class Monster {
 private String name;
 private String description;
-//private Role originalRole;
+private Role originalRole;
 
-//private Role role;
+private Role role;
 private int energy;
 private int position;
 private boolean frozen;
@@ -16,7 +18,7 @@ private int confusionTurns;
 public Monster(String name, String description, int energy){
 	this.name = name;
 	this.description = description;
-	// this.originalRole = originalRole;
+//	this.originalRole = originalRole;
 	this.energy = energy;
 	
 	this.position = 0;
