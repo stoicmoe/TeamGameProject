@@ -6,6 +6,6 @@ public class testclass2 {
  int x =2;
  int y = 4;
  System.out.println(y/x);
- System.out.println("bla bla!!");
+ System.out.println("bbbb!!");
  }
 }
