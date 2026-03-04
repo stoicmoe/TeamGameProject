@@ -1,5 +1,5 @@
 package game.engine.cells;
 
-public class test {
+public class DoorCell {
 
 }
