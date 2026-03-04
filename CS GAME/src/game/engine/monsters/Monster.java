@@ -61,13 +61,45 @@ public int getConfusionTurns() {
 	return confusionTurns;
 }
 
-// public Role getRole(){
-// return Role;
+//public Role getRole(){
+//return Role;
 //}
 
 //public Role getOriginalRole(){
 //return originalRole;
 //}
+
+public void setEnergy(int energy) {
+	if (energy < 0)
+		this.energy = 0;
+	else 
+		this.energy = energy;
+}
+
+
+public void setPosition(int position) {
+	this.position = position;
+}
+
+
+public void setFrozen(boolean frozen) {
+	this.frozen = frozen;
+}
+
+
+public void setShielded(boolean shielded) {
+	this.shielded = shielded;
+}
+
+
+public void setConfusionTurns(int confusionTurns) {
+	this.confusionTurns = confusionTurns;
+}
+
+public int compareTo(Monster o){
+	return Integer.compare(this.position, o.position);
+}
+
 
 
 
