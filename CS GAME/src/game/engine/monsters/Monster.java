@@ -15,10 +15,10 @@ private boolean shielded;
 private int confusionTurns;
 
 
-public Monster(String name, String description, int energy){
+public Monster(String name, String description, Role role, int energy){
 	this.name = name;
 	this.description = description;
-//	this.originalRole = originalRole;
+	this.originalRole = originalRole;
 	this.energy = energy;
 	
 	this.position = 0;
