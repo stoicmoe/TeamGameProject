@@ -2,9 +2,9 @@ package game.engine.cells;
 import game.engine.*;
 
 public class DoorCell extends Cell{
-	Role role;
-	int energy;
-	boolean activated;
+	private Role role;
+	private int energy;
+	private boolean activated;
 
 	public DoorCell(String name, Role role, int energy, boolean activated) {
 		super(name);

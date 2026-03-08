@@ -1,7 +1,7 @@
 package game.engine.cells;
 
 public class TransportCell extends Cell{
-	int effect;
+	private int effect;
 
 	public TransportCell(String name, int effect) {
 		super(name);
