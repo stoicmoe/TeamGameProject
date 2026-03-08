@@ -3,23 +3,23 @@ import game.engine.monsters.*;
 
 public class Cell {
 	private String name;
-	//private Monster monster;
+	private Monster monster;
 	
 	public Cell(String name) {
 		super();
 		this.name = name;
-		//this.monster=null;
+		this.monster=null;
 	}
 
 	public String getName() {
 		return name;
 	}
 
-	/*public Monster getMonster() {
+	public Monster getMonster() {
 		return monster;
 	}
 
 	public void setMonster(Monster monster) {
 		this.monster = monster;
-	}*/
+	}
 }

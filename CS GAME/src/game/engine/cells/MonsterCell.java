@@ -1,5 +1,7 @@
 package game.engine.cells;
 
+import game.engine.monsters.*;
+
 public class MonsterCell extends Cell{
 	Monster cellMonster;
 
