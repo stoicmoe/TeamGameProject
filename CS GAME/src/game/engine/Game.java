@@ -1,6 +1,8 @@
 package game.engine;
 
+import java.io.IOException;
 import java.util.*;
+import game.engine.dataloader.DataLoader;
 import game.engine.monsters.*;
 
 public class Game {
@@ -27,6 +29,25 @@ public class Game {
 	}
 	public Monster getOpponent() {
 		return opponent;
+	}
+	public Game(Role playerRole) throws IOException{
+		board = new Board(DataLoader.readCards());
+		allMonsters = DataLoader.readMonsters();
+		player = selectRandomMonsterByRole(playerRole);
+		if(playerRole == Role.LAUGHER)
+			opponent = selectRandomMonsterByRole(Role.SCARER);
+		else
+			opponent = selectRandomMonsterByRole(Role.LAUGHER);
+		current = player;
+	}
+	private Monster selectRandomMonsterByRole(Role role){
+		ArrayList<Monster> tmp = new ArrayList<>();
+		for(int i=0; i<allMonsters.size(); i++)
+			if(allMonsters.get(i).getOriginalRole() == role)
+				tmp.add(allMonsters.get(i));
+		Random r = new Random();
+		int index = r.nextInt(tmp.size());
+		return tmp.get(index); 
 	}
 	
 }

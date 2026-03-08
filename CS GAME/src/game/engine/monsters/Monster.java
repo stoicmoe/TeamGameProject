@@ -63,13 +63,13 @@ public int getConfusionTurns() {
 	return confusionTurns;
 }
 
-//public Role getRole(){
-//return Role;
-//}
+public Role getRole(){
+ return role;
+}
 
-//public Role getOriginalRole(){
-//return originalRole;
-//}
+public Role getOriginalRole(){
+ return originalRole;
+}
 
 public void setEnergy(int energy) {
 	if (energy < 0)
