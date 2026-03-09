@@ -6,7 +6,7 @@ public class DoorCell extends Cell{
 	private int energy;
 	private boolean activated;
 
-	public DoorCell(String name, Role role, int energy, boolean activated) {
+	public DoorCell(String name, Role role, int energy) {
 		super(name);
 		this.role = role;
 		this.energy = energy;
