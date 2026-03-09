@@ -9,7 +9,7 @@ public class Board {
 	private Cell[][] boardCells;
 	private static ArrayList<Monster> stationedMonsters;
 	private static ArrayList<Card> originalCards;
-	private static ArrayList<Card> cards;
+	public static ArrayList<Card> cards;
 	
 	public Cell[][] getBoardCells() {
 		return boardCells;
@@ -20,7 +20,7 @@ public class Board {
 	public static void setStationedMonsters(ArrayList<Monster> stationedMonsters) {
 		Board.stationedMonsters = stationedMonsters;
 	}
-	public static ArrayList<Card> getOriginalcards() {
+	public static ArrayList<Card> getOriginalCards() {
 		return originalCards;
 	}
 	public static ArrayList<Card> getCards() {
