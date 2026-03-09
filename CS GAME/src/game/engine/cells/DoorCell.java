@@ -10,7 +10,7 @@ public class DoorCell extends Cell{
 		super(name);
 		this.role = role;
 		this.energy = energy;
-		this.activated = activated;
+		this.activated = false;
 	}
 	public Role getRole() {
 		return role;
