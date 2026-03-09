@@ -8,7 +8,7 @@ public class Cell {
 	public Cell(String name) {
 		super();
 		this.name = name;
-		this.monster=null;
+		this.monster = null;
 	}
 
 	public String getName() {
