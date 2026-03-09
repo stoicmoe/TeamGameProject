@@ -9,5 +9,8 @@ public class MonsterCell extends Cell{
 		super(name);
 		this.cellMonster = cellMonster;
 	}
-	
+
+	public Monster getCellMonster() {
+		return cellMonster;
+	}
 }
