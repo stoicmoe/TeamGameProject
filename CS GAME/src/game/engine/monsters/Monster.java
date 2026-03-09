@@ -2,7 +2,7 @@ package game.engine.monsters;
 
 import game.engine.*;
 
-public abstract class Monster {
+public abstract class Monster implements Comparable<Monster> {
 private String name;
 private String description;
 private Role originalRole;
