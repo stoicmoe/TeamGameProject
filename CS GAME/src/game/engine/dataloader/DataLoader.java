@@ -107,7 +107,7 @@ public class DataLoader {
                 monsters.add(new Schemer(name, description, role, energy));
             } 
             else if (monsterType.equals("MULTITASKER")) {
-                monsters.add(new MultiTasker(name, description, role, energy, 0));
+                monsters.add(new MultiTasker(name, description, role, energy));
             }
         }
     	br.close();
