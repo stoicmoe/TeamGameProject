@@ -13,7 +13,7 @@ public final class Constants {
 	public static final int[] SOCK_CELL_INDICES = {32, 42, 74, 84, 98}; //(Start of the sock)
 	public static final int[] CARD_CELL_INDICES = {4, 12, 28, 36, 48, 56, 60, 76, 86, 90};
 	//Energy Constants:
-	public static final int WININNG_ENERGY = 1000;
+	public static final int WINNING_ENERGY = 1000;
 	public static final int MIN_ENERGY = 0;
 	//Monster Constants:
 	public static final int MULTITASKER_BONUS = 200;
@@ -21,5 +21,5 @@ public final class Constants {
 	//Cell Constants:
 	public static final int SLIP_PENALTY = 100;
 	//Power Constants: 
-	public static final int POWERUP_CONST = 500;
+	public static final int POWERUP_COST = 500;
 }

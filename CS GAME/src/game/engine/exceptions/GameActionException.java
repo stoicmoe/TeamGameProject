@@ -1,10 +1,9 @@
 package game.engine.exceptions;
 
 public abstract class GameActionException extends Exception{
-	GameActionException(){
-		super();
+	public GameActionException(){
 	}
-	GameActionException(String message){
+	public GameActionException(String message){
 		super(message);
 	}
 }
