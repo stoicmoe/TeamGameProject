@@ -2,7 +2,7 @@ package game.engine.monsters;
 
 import game.engine.*;
 
-public class Monster {
+public abstract class Monster {
 private String name;
 private String description;
 private Role originalRole;
@@ -15,7 +15,7 @@ private boolean shielded;
 private int confusionTurns;
 
 
-public Monster(String name, String description, Role role, int energy){
+public Monster(String name, String description, Role originalRole, int energy){
 	this.name = name;
 	this.description = description;
 	this.originalRole = originalRole;
@@ -96,6 +96,10 @@ public void setShielded(boolean shielded) {
 
 public void setConfusionTurns(int confusionTurns) {
 	this.confusionTurns = confusionTurns;
+}
+
+public void setRole(Role role){
+	 this.role = role;
 }
 
 public int compareTo(Monster o){
