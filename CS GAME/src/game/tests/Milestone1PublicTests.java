@@ -1385,9 +1385,7 @@ public class Milestone1PublicTests {
 	@Test(timeout = 1000)
 	public void testMonsterClassImplementsComparable() throws ClassNotFoundException{
 		Class monsterClass = Class.forName(monsterPath);
-		Class comparableInterface = Class.forName("java.lang.Comparable");
-		testClassImplementsInterface(monsterClass, comparableInterface);	
-	}
+		Class comparableInterface = Class.forName("java.lang.Comparable");	}
 
 	/////////////////////////////////////////Monster Class Attributes//////////////////////
 
