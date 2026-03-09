@@ -47,8 +47,6 @@ public class Game {
 				tmp.add(allMonsters.get(i));
 		Random r = new Random();
 		int index = r.nextInt(tmp.size());
-		if(tmp.isEmpty())
-		    return null;
 		return tmp.get(index); 
 	}
 	
