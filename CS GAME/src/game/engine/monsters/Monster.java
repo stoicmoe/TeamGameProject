@@ -80,14 +80,19 @@ public void setEnergy(int energy) {
 
 
 public void setPosition(int position) {
-	this.position = position;
+	if (position >= 100) {
+		int temp = (position-100);
+        this.position = 0+temp;
+        temp = 0;
+    } else {
+        this.position = position;
+    }
 }
 
 
 public void setFrozen(boolean frozen) {
 	this.frozen = frozen;
 }
-
 
 public void setShielded(boolean shielded) {
 	this.shielded = shielded;
