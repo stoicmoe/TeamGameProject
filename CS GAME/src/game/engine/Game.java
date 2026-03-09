@@ -43,7 +43,7 @@ public class Game {
 	private Monster selectRandomMonsterByRole(Role role){
 		ArrayList<Monster> tmp = new ArrayList<>();
 		for(int i=0; i<allMonsters.size(); i++)
-			if(allMonsters.get(i).getOriginalRole() == role)
+			if(allMonsters.get(i).getRole() == role)
 				tmp.add(allMonsters.get(i));
 		Random r = new Random();
 		int index = r.nextInt(tmp.size());
