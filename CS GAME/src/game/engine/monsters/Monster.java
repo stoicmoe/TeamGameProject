@@ -80,7 +80,10 @@ public void setEnergy(int energy) {
 
 
 public void setPosition(int position) {
-	this.position = position;
+	if(position == 100)
+		this.position = 1;
+	else
+		this.position = position;
 }
 
 
