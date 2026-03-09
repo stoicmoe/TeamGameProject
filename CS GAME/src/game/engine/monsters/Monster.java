@@ -20,7 +20,7 @@ public Monster(String name, String description, Role originalRole, int energy){
 	this.description = description;
 	this.originalRole = originalRole;
 	this.energy = energy;
-	
+	this.role = originalRole;
 	this.position = 0;
 	this.confusionTurns = 0;
 	this.frozen = false;
