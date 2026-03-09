@@ -65,7 +65,7 @@ public class DataLoader {
             if (parts.length == 3) {
                 Role role = Role.valueOf(parts[1]);
                 energy = Integer.parseInt(parts[2]);
-                cells.add(new DoorCell(cellName, role, energy, false));
+                cells.add(new DoorCell(cellName, role, energy));
             }
             else if (parts.length == 2) {
                 energy = Integer.parseInt(parts[1]);
