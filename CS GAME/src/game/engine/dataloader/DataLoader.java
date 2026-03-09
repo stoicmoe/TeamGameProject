@@ -88,6 +88,7 @@ public class DataLoader {
 		
 		String line;
         while ((line = br.readLine()) != null) {
+        	if (line.trim().isEmpty()) continue;
 
             String[] parts = line.split(",");
             String monsterType = parts[0];
