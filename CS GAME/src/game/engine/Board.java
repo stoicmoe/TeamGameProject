@@ -20,7 +20,7 @@ public class Board {
 	public static void setStationedMonsters(ArrayList<Monster> stationedMonsters) {
 		Board.stationedMonsters = stationedMonsters;
 	}
-	public static ArrayList<Card> getOriginalcards() {
+	public static ArrayList<Card> getOriginalCards() {
 		return originalCards;
 	}
 	public static ArrayList<Card> getCards() {
